@@ -7,7 +7,7 @@
     <title>Startup • Landing</title>
     <meta name="description" content="Landing page de la startup.">
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" type="image/png" href="imgs/logo.png"> 
+    <link rel="icon" type="image/png" href="imgs/logo.png">
 </head>
 
 <body>
@@ -31,6 +31,88 @@
             </div>
         </div>
     </header>
+
+    <main id="main" class="site-main">
+        <!-- HERO -->
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <h1 id="hero-title" class="hero__title">Lleva tu <span class="accent">servicio</span> al siguiente
+                        nivel</h1>
+                    <p class="hero__subtitle">
+                        Plataforma simple, rápida y segura para gestionar tu flujo. Plantillas, integraciones y soporte
+                        24/7.
+                    </p>
+                    <div class="hero__cta">
+                        <a class="btn btn--primary btn--large" href="#cta">Pruébalo gratis</a>
+                        <a class="btn btn--ghost" href="#how-it-works">Ver cómo funciona</a>
+                    </div>
+                </div>
+
+                <!-- Hero visual / ilustración (usa div para contenido visual particular) -->
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="visual-placeholder">[Ilustración / mockup aquí]</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="features" aria-labelledby="features-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="features-title" class="section-title">Características principales</h2>
+                    <p class="section-subtitle">Herramientas pensadas para acelerar tu trabajo y ahorrar tiempo.</p>
+                </header>
+
+                <div class="features__grid">
+                    <article class="feature-card" aria-labelledby="f1-title">
+                        <div class="feature-card__icon" aria-hidden="true">🔒</div>
+                        <h3 id="f1-title" class="feature-card__title">Seguridad</h3>
+                        <p class="feature-card__desc">Cifrado de datos, autenticación y backups automáticos.</p>
+                    </article>
+
+                    <article class="feature-card" aria-labelledby="f2-title">
+                        <div class="feature-card__icon" aria-hidden="true">⚡</div>
+                        <h3 id="f2-title" class="feature-card__title">Rendimiento</h3>
+                        <p class="feature-card__desc">Carga rápida y optimización para móviles y desktop.</p>
+                    </article>
+
+                    <article class="feature-card" aria-labelledby="f3-title">
+                        <div class="feature-card__icon" aria-hidden="true">🔗</div>
+                        <h3 id="f3-title" class="feature-card__title">Integraciones</h3>
+                        <p class="feature-card__desc">Conecta con las herramientas que ya usas (API y Webhooks).</p>
+                    </article>
+
+                    <article class="feature-card" aria-labelledby="f4-title">
+                        <div class="feature-card__icon" aria-hidden="true">🧩</div>
+                        <h3 id="f4-title" class="feature-card__title">Modular</h3>
+                        <p class="feature-card__desc">Componentes reutilizables para adaptar la plataforma a tu flujo.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section id="cta" class="cta" aria-labelledby="cta-title">
+            <div class="container cta__inner">
+                <div class="cta__content">
+                    <h2 id="cta-title" class="cta__title">Listo para empezar?</h2>
+                    <p class="cta__desc">Regístrate hoy y obtén 14 días gratis. Sin tarjeta.</p>
+                </div>
+
+                <form class="cta__form" action="#" method="post" aria-label="Formulario de registro rápido">
+                    <div class="form-row">
+                        <label for="email" class="sr-only">Correo electrónico</label>
+                        <input id="email" name="email" type="email" placeholder="tu@correo.com" required>
+                        <button type="submit" class="btn btn--primary">Comenzar</button>
+                    </div>
+                    <p class="cta__small">Al registrarte aceptas nuestros <a href="/terms">Términos y Condiciones</a>.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer id="contact" class="site-footer" role="contentinfo">
         <div class="container footer__inner">
