@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup • Landing</title>
+    <meta name="description" content="Landing page de la startup.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="imgs/logo.png"> 
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="marca" aria-label="Inicio · Startup">
+                <img src="imgs/logo.png" alt="Logo" class="marca__logo" width="48" height="48">
+                <span class="marca__nombre">Startup</span>
+            </a>
+
+            <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="#features">Características</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#pricing">Planes</a></li>
+                    <li class="main-nav__item"><a class="main-nav__link" href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a class="btn btn--primary" href="#cta">Comenzar</a>
+            </div>
+        </div>
+    </header>
+
+    <footer id="contact" class="site-footer" role="contentinfo">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <a class="marca footer__marca" href="/">
+                    <img src="imgs/logo.png" alt="Logo" width="32" height="32">
+                    <span>Startup</span>
+                </a>
+                <p class="footer__copy">© <span id="year"></span> Startup. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="footer__col">
+                <nav class="footer-nav" aria-label="Enlaces de pie de página">
+                    <ul>
+                        <li><a href="/about">Acerca</a></li>
+                        <li><a href="/privacy">Privacidad</a></li>
+                        <li><a href="/terms">Términos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__col">
+                <address class="contact" aria-label="Información de contacto">
+                    <p>Soporte: <a href="mailto:soporte@startup.com">soporte@startup.com</a></p>
+                    <p>Tel: +54 9 11 1234 5678</p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Se necesita ejecutar el script en esta última parte del HTML -->
+    <script>
+        (function () {
+            const yearEl = document.getElementById('year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+        })();
+    </script>
+</body>
+
+</html>
