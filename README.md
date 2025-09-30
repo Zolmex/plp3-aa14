@@ -36,9 +36,8 @@ Los **recursos** son elementos técnicos reutilizables que sostienen los objetos
   - Componentes reutilizables (`.btn`, `.feature-card`, `.section-header`).  
 - **Imágenes/íconos**: `logo.png`, placeholders, emojis de features.  
 - **JavaScript**:  
-  - Año dinámico en el footer.  
-  - Scroll suave en la navegación.  
-  - Validación de formulario.  
+  - Contador dinámico en el hero.
+  - efecto de hover en los features
 
 ---
 
