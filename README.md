@@ -1,11 +1,11 @@
 #  Landing Page – Startup
 
-Landing page desarrollada en HTML5 + CSS Grid + Sass, con despliegue en Netlify/GitHub Pages.  
+Landing page desarrollada en HTML5 + CSS Grid + Sass, con despliegue en Netlify (https://actividad-aulica-14.netlify.app/).  
 Incluye componentes reutilizables en Sass, estructura modular y un modelo EORM documentado.
 
 ---
 
-##  Modelo EORM
+##  Modelo EORM (Entidad, objeto, recurso, modulo)
 
 ### 1. Entidad (E)
 La **entidad** representa el núcleo conceptual del proyecto.  
@@ -51,7 +51,7 @@ Los módulos son agrupaciones de recursos y objetos que cumplen una función.
 - **Footer module** = Links, contacto y copyright.  
 
 ---
-## EORM como *Entity Oriented Relationship Model* (opcional)
+## EORM como *Entity Oriented Relationship Model* 
 
 En un enfoque más cercano al modelado de datos, el EORM puede representarse como un diagrama de entidades y relaciones.  
 Aplicado al proyecto:  
