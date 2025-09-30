@@ -1,6 +1,6 @@
 /* === HERO === */
 .hero {
-  min-height: 100vh; /* ocupa toda la pantalla al cargar */
+  min-height: 100vh; 
 display: flex;
 align-items: center;
 background: url("../imgs/logo.png") no-repeat center center/cover;
