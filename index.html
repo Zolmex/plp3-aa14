@@ -1,155 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup • Landing</title>
-    <meta name="description" content="Landing page de la startup.">
+    <title>Startup - Landing Page</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" type="image/png" href="imgs/logo.png">
 </head>
-
 <body>
-    <header class="site-header" role="banner">
-        <div class="container header-inner">
-            <a href="/" class="marca" aria-label="Inicio · Startup">
-                <img src="imgs/logo.png" alt="Logo" class="marca__logo" width="48" height="48">
-                <span class="marca__nombre">Startup</span>
-            </a>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="brand">
+                    <img src="assets/logo.png" alt="Logo Startup" class="brand__logo">
+                    <span class="brand__name">Startup</span>
+                </div>
 
-            <nav class="main-nav" role="navigation" aria-label="Navegación principal">
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a class="main-nav__link" href="#features">Características</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#pricing">Planes</a></li>
-                    <li class="main-nav__item"><a class="main-nav__link" href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
+                <nav class="navigation">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#features" class="nav__link">Características</a></li>
+                        <li class="nav__item"><a href="#pricing" class="nav__link">Precios</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                    </ul>
+                </nav>
 
-            <div class="header-actions">
-                <a class="btn btn--primary" href="#cta">Comenzar</a>
+                <div class="header__actions">
+                    <button class="btn btn--secondary">Ingresar</button>
+                    <button class="btn btn--primary">Registrarse</button>
+                </div>
             </div>
         </div>
     </header>
 
-    <main id="main" class="site-main">
-        <!-- HERO -->
-        <section id="hero" class="hero" aria-labelledby="hero-title">
-            <div class="container hero__inner">
-                <div class="hero__content">
-                    <h1 id="hero-title" class="hero__title">Lleva tu <span class="accent">servicio</span> al siguiente
-                        nivel</h1>
-                    <p class="hero__subtitle">
-                        Plataforma simple, rápida y segura para gestionar tu flujo. Plantillas, integraciones y soporte
-                        24/7.
-                    </p>
-                    <div class="hero__cta">
-                        <a class="btn btn--primary btn--large" href="#cta">Pruébalo gratis</a>
-                        <a class="btn btn--ghost" href="#how-it-works">Ver cómo funciona</a>
-                    </div>
-                </div>
-
-                <!-- Hero visual / ilustración (usa div para contenido visual particular) -->
-                <div class="hero__visual" aria-hidden="true">
-                    <div class="visual-placeholder">[Ilustración / mockup aquí]</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FEATURES -->
-        <section id="features" class="features" aria-labelledby="features-title">
+    <main>
+        <!-- HERO SECTION 
+        <section class="hero">
             <div class="container">
-                <header class="section-header">
-                    <h2 id="features-title" class="section-title">Características principales</h2>
-                    <p class="section-subtitle">Herramientas pensadas para acelerar tu trabajo y ahorrar tiempo.</p>
-                </header>
-
-                <div class="features__grid">
-                    <article class="feature-card" aria-labelledby="f1-title">
-                        <div class="feature-card__icon" aria-hidden="true">🔒</div>
-                        <h3 id="f1-title" class="feature-card__title">Seguridad</h3>
-                        <p class="feature-card__desc">Cifrado de datos, autenticación y backups automáticos.</p>
-                    </article>
-
-                    <article class="feature-card" aria-labelledby="f2-title">
-                        <div class="feature-card__icon" aria-hidden="true">⚡</div>
-                        <h3 id="f2-title" class="feature-card__title">Rendimiento</h3>
-                        <p class="feature-card__desc">Carga rápida y optimización para móviles y desktop.</p>
-                    </article>
-
-                    <article class="feature-card" aria-labelledby="f3-title">
-                        <div class="feature-card__icon" aria-hidden="true">🔗</div>
-                        <h3 id="f3-title" class="feature-card__title">Integraciones</h3>
-                        <p class="feature-card__desc">Conecta con las herramientas que ya usas (API y Webhooks).</p>
-                    </article>
-
-                    <article class="feature-card" aria-labelledby="f4-title">
-                        <div class="feature-card__icon" aria-hidden="true">🧩</div>
-                        <h3 id="f4-title" class="feature-card__title">Modular</h3>
-                        <p class="feature-card__desc">Componentes reutilizables para adaptar la plataforma a tu flujo.
+                <div class="hero__content">
+                    <!-- Texto del hero -->
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            Transforma tu negocio con 
+                            <span class="hero__highlight">nuestra plataforma</span>
+                        </h1>
+                        <p class="hero__description">
+                            La solución todo-en-uno para gestionar tu empresa. Más de 10,000 empresas confían en nosotros para hacer crecer su negocio.
                         </p>
-                    </article>
+                        
+                        <!-- Botones principales -->
+                        <div class="hero__actions">
+                            <button class="btn btn--primary btn--large">
+                                Comenzar gratis
+                            </button>
+                            <button class="btn btn--outline">
+                                Ver demo
+                            </button>
+                        </div>
+
+                        <!-- Estadísticas simples -->
+                        <div class="hero__stats">
+                            <div class="stat">
+                                <span class="stat__number">10K+</span>
+                                <span class="stat__label">Clientes</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">99.9%</span>
+                                <span class="stat__label">Uptime</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat__number">4.9/5</span>
+                                <span class="stat__label">Rating</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen del hero -->
+                    <div class="hero__visual">
+                        <img src="assets/hero-dashboard.png" alt="Dashboard de la plataforma" class="hero__image">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- CALL TO ACTION -->
-        <section id="cta" class="cta" aria-labelledby="cta-title">
-            <div class="container cta__inner">
-                <div class="cta__content">
-                    <h2 id="cta-title" class="cta__title">Listo para empezar?</h2>
-                    <p class="cta__desc">Regístrate hoy y obtén 14 días gratis. Sin tarjeta.</p>
+        
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Características principales</h2>
+                    <p class="section__subtitle">Todo lo que necesitas en una sola plataforma</p>
                 </div>
-
-                <form class="cta__form" action="#" method="post" aria-label="Formulario de registro rápido">
-                    <div class="form-row">
-                        <label for="email" class="sr-only">Correo electrónico</label>
-                        <input id="email" name="email" type="email" placeholder="tu@correo.com" required>
-                        <button type="submit" class="btn btn--primary">Comenzar</button>
+                
+                
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">⚡</div>
+                        <h3 class="feature-card__title">Rápido y eficiente</h3>
+                        <p class="feature-card__description">
+                            Carga ultrarrápida y optimizado para máximo rendimiento.
+                        </p>
                     </div>
-                    <p class="cta__small">Al registrarte aceptas nuestros <a href="/terms">Términos y Condiciones</a>.
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">¿Listo para comenzar?</h2>
+                    <p class="cta__description">
+                        Únete a miles de empresas que ya están transformando su negocio.
                     </p>
-                </form>
+                    <button class="btn btn--primary btn--large">Comenzar ahora</button>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="site-footer" role="contentinfo">
-        <div class="container footer__inner">
-            <div class="footer__col">
-                <a class="marca footer__marca" href="/">
-                    <img src="imgs/logo.png" alt="Logo" width="32" height="32">
-                    <span>Startup</span>
-                </a>
-                <p class="footer__copy">© <span id="year"></span> Startup. Todos los derechos reservados.</p>
-            </div>
-
-            <div class="footer__col">
-                <nav class="footer-nav" aria-label="Enlaces de pie de página">
-                    <ul>
-                        <li><a href="/about">Acerca</a></li>
-                        <li><a href="/privacy">Privacidad</a></li>
-                        <li><a href="/terms">Términos</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="footer__col">
-                <address class="contact" aria-label="Información de contacto">
-                    <p>Soporte: <a href="mailto:soporte@startup.com">soporte@startup.com</a></p>
-                    <p>Tel: +54 9 11 1234 5678</p>
-                </address>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2024 Startup. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Se necesita ejecutar el script en esta última parte del HTML -->
-    <script>
-        (function () {
-            const yearEl = document.getElementById('year');
-            if (yearEl) yearEl.textContent = new Date().getFullYear();
-        })();
-    </script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
