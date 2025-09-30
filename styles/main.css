@@ -1,0 +1,100 @@
+/* === HERO === */
+.hero {
+  min-height: 100vh; /* ocupa toda la pantalla al cargar */
+display: flex;
+align-items: center;
+background: url("../imgs/logo.png") no-repeat center center/cover;
+color: #fff;
+position: relative;
+text-align: left;
+}
+
+/* Para oscurecer un poco la imagen y resaltar texto */
+.hero::before {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.55);
+}
+
+/* Contenido centrado */
+.hero__inner {
+position: relative;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
+}
+
+/* Texto */
+.hero__title {
+font-size: 3rem;
+line-height: 1.2;
+}
+
+.hero__subtitle {
+margin: 1rem 0 2rem;
+font-size: 1.25rem;
+max-width: 500px;
+}
+
+/* Botones */
+.hero__cta {
+display: flex;
+gap: 1rem;
+}
+
+.btn {
+display: inline-block;
+padding: 0.75rem 1.5rem;
+border-radius: 8px;
+font-weight: bold;
+text-decoration: none;
+transition: 0.3s ease;
+}
+
+.btn--primary {
+background: #007bff;
+color: white;
+}
+
+.btn--primary:hover {
+background: #0056b3;
+}
+
+.btn--ghost {
+border: 2px solid white;
+color: white;
+}
+
+.btn--ghost:hover {
+background: white;
+color: black;
+}
+
+/* Imagen/ilustración */
+.hero__visual {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.hero__visual img {
+max-width: 100%;
+height: auto;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../imgs/logo.png") no-repeat center center;
+  background-size: 300px;
+  color: #fff;
+  position: relative;
+  text-align: left;
+}
