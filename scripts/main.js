@@ -23,20 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Efecto hover simple en botones
-    function iniciarEfectosBotones() {
-        const botones = document.querySelectorAll('.btn');
-        
-        botones.forEach(boton => {
-            boton.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-2px)';
-            });
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
             
-            boton.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
-    }
+    });
     
     // Iniciar cuando el hero sea visible
     const observer = new IntersectionObserver((entries) => {
