@@ -12,7 +12,7 @@
         <div class="container">
             <div class="header__content">
                 <div class="brand">
-                    <img src="assets/logo.png" alt="Logo Startup" class="brand__logo">
+                    <img src="img/logo.png" alt="Logo Startup" class="brand__logo">
                     <span class="brand__name">Startup</span>
                 </div>
 
@@ -33,7 +33,7 @@
     </header>
 
     <main>
-        <!-- HERO SECTION 
+        <!-- HERO SECTION -->
         <section class="hero">
             <div class="container">
                 <div class="hero__content">
@@ -49,7 +49,7 @@
                         
                         <!-- Botones principales -->
                         <div class="hero__actions">
-                            <button class="btn btn--primary btn--large">
+                            <button class="btn btn--primary btn--large" id="mainCta">
                                 Comenzar gratis
                             </button>
                             <button class="btn btn--outline">
@@ -57,39 +57,40 @@
                             </button>
                         </div>
 
-                        <!-- Estadísticas simples -->
+                        <!-- Estadísticas -->
                         <div class="hero__stats">
                             <div class="stat">
-                                <span class="stat__number">10K+</span>
+                                <span class="stat__number" data-target="10000">0</span>
                                 <span class="stat__label">Clientes</span>
                             </div>
                             <div class="stat">
-                                <span class="stat__number">99.9%</span>
-                                <span class="stat__label">Uptime</span>
+                                <span class="stat__number" data-target="99">0</span>
+                                <span class="stat__label">% Uptime</span>
                             </div>
                             <div class="stat">
-                                <span class="stat__number">4.9/5</span>
-                                <span class="stat__label">Rating</span>
+                                <span class="stat__number" data-target="48">0</span>
+                                <span class="stat__label">/5 Rating</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Imagen del hero -->
+                    <!-- Visual del hero con logo -->
                     <div class="hero__visual">
-                        <img src="assets/hero-dashboard.png" alt="Dashboard de la plataforma" class="hero__image">
+                        <div class="hero__logo-container">
+                            <img src="img/logo.png" alt="Logo Startup" class="hero__logo" onerror="this.style.display='none'">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        
+        <!-- FEATURES SECTION -->
         <section id="features" class="features">
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title">Características principales</h2>
                     <p class="section__subtitle">Todo lo que necesitas en una sola plataforma</p>
                 </div>
-                
                 
                 <div class="features__grid">
                     <div class="feature-card">
@@ -99,11 +100,25 @@
                             Carga ultrarrápida y optimizado para máximo rendimiento.
                         </p>
                     </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🔒</div>
+                        <h3 class="feature-card__title">Seguro</h3>
+                        <p class="feature-card__description">
+                            Tus datos protegidos con encriptación de última generación.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">📱</div>
+                        <h3 class="feature-card__title">Responsive</h3>
+                        <p class="feature-card__description">
+                            Funciona perfecto en desktop, tablet y móvil.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        
+        <!-- CTA SECTION -->
         <section class="cta">
             <div class="container">
                 <div class="cta__content">
@@ -117,6 +132,7 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -125,6 +141,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
