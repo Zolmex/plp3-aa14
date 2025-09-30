@@ -255,6 +255,70 @@ button {
   position: relative;
 }
 
+/*features (tarjetas caracteristicas)*/
+.features {
+  padding: 4rem 0;
+  background: transparent; 
+}
+
+.features .section__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features .section__title {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.features .section__subtitle {
+  color: rgba(255,255,255,.9);
+}
+
+/* Grid */
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* Tarjeta */
+.feature-card {
+  background: linear-gradient(160deg, #22d3ee 20%, #0067ce 80%);
+  border-radius: 8px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+  position: relative;
+  color: #ffffff; /* texto blanco por contraste */
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(34, 211, 238, 0.6); /* glow celeste */
+}
+
+.feature-card__title {
+  color: #ffffff; 
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: .4rem;
+}
+
+.feature-card__description {
+  color: rgba(255,255,255,0.9);
+  font-size: .98rem;
+  line-height: 1.55;
+}
+
+
+/* mobile features */
+@media (max-width: 480px) {
+  .features { padding: 3rem 0; }
+  .feature-card { padding: 1.25rem; }
+}
+
 .cta__content h2 {
   padding-bottom: 0.2rem;
   z-index: 1;
